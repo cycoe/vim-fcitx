@@ -1,10 +1,10 @@
 if exists('g:loaded_vim_fcitx')
 	finish
 endif
-if !executable('fcitx-remote')
+if !executable('fcitx5-remote')
 	finish
 endif
-if system('fcitx-remote') =~ 'Not get reply'
+if system('fcitx5-remote') =~ 'Not get reply'
 	finish
 endif
 

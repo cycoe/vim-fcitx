@@ -1,22 +1,22 @@
 "return '' is for map <expr>
 
 function! fcitx#inactivate()
-	call system('fcitx-remote -c')
+	call system('fcitx5-remote -c')
 	return ''
 endfunction
 
 function! fcitx#activate()
-	call system('fcitx-remote -o')
+	call system('fcitx5-remote -o')
 	return ''
 endfunction
 
 function! fcitx#toggle()
-	call system('fcitx-remote -t')
+	call system('fcitx5-remote -t')
 	return ''
 endfunction
 
 function! fcitx#is_on()
-	return system('fcitx-remote') == 2 ? v:true : v:false
+	return system('fcitx5-remote') == 2 ? v:true : v:false
 endfunction
 
 function! fcitx#inactivate_with_state()
